@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<html lang="ko">
+		<meta charset="utf-8">
+		<title> html 테스트 </title> <!--탭 상단 바의 이름 표시 -->
+	</head>
+	<body>
+		<!-- 그림 불러오기, width, height 그림 크기 조절(하나라도 빠지면 비율 유지하면서 조절) -->
+		<!-- alt는 그림 설명(인터넷 검색 결과 이 태그는 이미지가 깨졌을 때 나타난다고 함.), ','는 생략 가능-->
+		<img src="image/hoodie-girl.png" width="1000" alt="hoodie-girl">
+		
+		<!-- 그림 아래에 문자쓰기, 하이퍼링크가 되지 않음, 안의 문장이 끝나면 자동으로 줄바꿈 해줌 -->
+		<p> Wallpapersite.com </p> 
+		
+		<!-- 하이퍼링크 적용법, <br>은 줄바꿈 태그, https://를 쓰지 않으면 파일 내 도메인으로 이동함 -->
+		<!-- 지금은 창이 한개 만 있는 경우는 _self나 _blank만 쓰면 되며 나머지는 2개의 창을 관리 할 때 사용 -->
+		<!-- <h1~6> 태그는 글자 크기를 조정하는 태그이며 숫자가 높아질 수록 작아짐 -->
+		<!-- <b>는 텍스트를 진하게 표시하고 <i>는 텍스트를 이탤릭체로 변경함 -->
+		<a href="https://wallpapersite.com", title="배경화면 사이트", target="_self">
+			<h1> <i> 배경화면 사이트 1 (_self : 현재창), h1, i<br> </i> </h1>
+		</a>
+		<a href="https://wallpapersite.com", title="배경화면 사이트", target="_blank">
+			<h3> <b> 배경화면 사이트 1 (_blank : 새 창), h3, b<br> </b> </h3>
+		</a>
+		<a href="https://wallpapersite.com", title="배경화면 사이트", target="_parent">
+			<h5> 배경화면 사이트 1 (_parent : 부모 창)<br> </h5>
+		</a>
+		<a href="https://wallpapersite.com", title="배경화면 사이트", target="_top">
+			<h6> 배경화면 사이트 1 (_top : 최상위 창)<br><br> </h6>
+		</a>
+		
+		<img src="image/in-school.jpeg", width="1000", alt="in-school">
+		<p> Wallpapermaiden.com </p>
+		<a href="https://wallpapermaiden.com", title="배경화면 사이트", target>
+			배경화면 사이트 2<br><br>
+		</a>
+	</body>
+</html>
